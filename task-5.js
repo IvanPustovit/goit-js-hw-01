@@ -6,9 +6,13 @@ const priceChili = 250;
 const priceAustralia = 170;
 const priceIndia = 80;
 const priceJamaica = 120;
+let country;
 
-
-const country = countryEnter.toLocaleLowerCase();
+if (countryEnter === null) {
+    console.log("Отменено пользователем");
+} else if (countryEnter != null) {
+    country = countryEnter.toLocaleLowerCase();
+}
 
 switch (country) {
 
