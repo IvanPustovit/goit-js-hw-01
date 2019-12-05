@@ -3,24 +3,10 @@
 let input;
 let total = 0;
 
-while (true) {
+do {
     input = prompt('Введите число');
+    let inputUser = Number(input);
+    total += inputUser;
+} while (input !== null);
 
-    if (input === NaN) {
-        break;
-    }
-
-    input = Number(input);
-
-    if (input <= 0) {
-        break;
-    }
-
-    total += input;
-}
-
-if(Number.isNaN(input)){
-        alert('Было введено не число, попробуйте еще раз');
-        
-    }
-alert(total);
+alert(total)

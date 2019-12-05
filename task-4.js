@@ -1,13 +1,13 @@
 'use strict';
-let credits = 23580;
-let pricePerDroud = 3000;
-let how = prompt('ВВедите количество дроидов');
-let totalPrice = how * pricePerDroud
+const credits = 23580;
+const pricePerDroud = 3000;
+let howDroids = prompt('ВВедите количество дроидов');
+let totalPrice = howDroids * pricePerDroud
 
-if (how === null) {
+if (howDroids === null) {
     console.log('Отменено пользователем!');
 } else if (totalPrice > credits) {
     console.log('Недостаточно средств на счету!');
 } else {
-    console.log('Вы купили', how, 'дроидов, на счету осталось ', credits - totalPrice, 'кредитов.');
+    console.log(`Вы купили ${howDroids} дроидов, на счету осталось ${credits - totalPrice} кредитов.`);
 }
